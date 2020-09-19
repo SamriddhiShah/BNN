@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Network</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="page.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Book Network</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="recently_added.html">Book Collection</a></li>
+                    <li><a href="addBook.html">Add Books</a></li>
+                    <li><a onclick="logOut();" href="#">Log Out</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+
+        <center>
+            <h1 id="header_label" class="header">
+
+            </h1>
+            <br>
+
+
+            <label class="btn btn-danger">Status: <span id="status_button"></span></label>
+            <br>
+            <br>
+            <span><img id="pic"></span>
+            <span class="input_div_message_page" id="output" style="text-align: center;margin-bottom: 70px;"> </span>
+            <button title="The Book will be marked as inactive and no longer be visible to other users." onclick="Inactive();" class="btn btn3" id="inactive">Book Exchanged?</button>
+        </center>
+    </div>
+
+
+    <center>
+        <div class="input_div_message_page">
+
+
+        </div>
+
+    </center>
+
+    <script src="page.js"></script>
+    <footer>
+        <p>Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>, Book Network <br> Based on Samriddhi's idea... Special Thanks to Aditya Singhania!
+        </p>
+    </footer>
+</body>
+
+</html>

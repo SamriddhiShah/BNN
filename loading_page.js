@@ -1,0 +1,1 @@
+setTimeout(function(){ window.location="recently_added.html"; }, 5000);

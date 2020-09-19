@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+
+header {
+    background: #E37400;
+
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Parisienne', cursive;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    float: left;
+    padding: 1px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url('add_book_cover.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.text-para{
+    background-color: rgba(0,0,0,0.7);
+    width:70%;
+    border:3px white solid;
+    padding:30px;
+    border-radius: 80px;
+    color: white;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+.main{
+    height:700px;
+    
+}
+.aboutUs-text{
+    color:white;
+    
+    left: 50%;
+   font-size: 150px;
+    color:white;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.accordion {
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    background: #E37400;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    color: black;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+  .boder-abc{
+      width:100%;
+      color:white;
+      border-bottom: white solid 3px;
+  }
+
+  

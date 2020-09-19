@@ -1,0 +1,347 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: url('recently_added_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div,
+form,
+input,
+select,
+textarea,
+label {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+legend {
+    padding: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background-color: #F3BF2B;
+}
+
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px #E37400;
+}
+
+.banner {
+    font-family: 'Parisienne', cursive;
+    color: white;
+    position: relative;
+    height: 250px;
+    background-image: url("add_book_cover.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+input[type="date"] {
+    padding: 4px 5px;
+}
+
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.item:hover p,
+.item:hover i,
+.question:hover p,
+.question label:hover,
+input:hover::placeholder {
+    color: #E37400;
+}
+
+.checkbox input[type=checkbox] {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+.item input:hover,
+.item select:hover,
+.item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0 #E37400;
+    color: #000000;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item span {
+    color: red;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colums {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.colums div {
+    width: 48%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    display: none;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+}
+
+.question span {
+    margin-left: 30px;
+}
+
+.question-answer label {
+    display: block;
+}
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+input[type=radio]:checked+label:before,
+label.radio:hover:before {
+    border: 2px solid#E37400;
+}
+
+label.radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid #E37400;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+.flax {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E37400;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #F3BF2B;
+}
+
+@media (min-width: 568px) {
+    .name-item,
+    .city-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .name-item input,
+    .name-item div {
+        width: calc(50% - 20px);
+    }
+    .name-item div input {
+        width: 97%;
+    }
+    .name-item div label {
+        display: block;
+        padding-bottom: 5px;
+    }
+}
+
+.Camera {
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: #F3BF2B;
+}
+
+.result_div {
+    width: 350px;
+    height: 300px;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: #F3BF2B;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #E37400;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Parisienne', cursive;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    float: left;
+    padding: 1px;
+}
+
+#drop-down-genre {
+    width: 200px;
+    height: 40px;
+}
+
+footer {
+    text-align: center;
+    background-color: #E37100;
+    color: #fff;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+}

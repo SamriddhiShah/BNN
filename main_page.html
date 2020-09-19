@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Book Network</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/7.19.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <!--cdn firebase links-->
+
+    <link rel="stylesheet" href="main_page.css">
+    <script src="main_page.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+    <!--Font Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <div>
+            <h1 class="header"> Book Network </h1>
+
+            <h1 class="h1-chosen-font">Book Network, Passion for Books...
+            </h1>
+
+        </div>
+
+        <div class="login_div">
+            <h2 class="div_text"><i class="fa fa-envelope fa-fw" style="color:white;"></i> Email Address</h2>
+            <br>
+            <input id="UserName" type="email" class="div_input" placeholder="">
+            <br>
+            <br>
+            <h2 class="div_text"> <i class="fa fa-key fa-fw" style="color:white;"></i> Password</h2>
+            <br>
+            <input type="password" id="Password" class="div_input" placeholder="">
+            <br>
+            <br>
+            <div class="form__group ">
+                <label class="status" id="status"></label>
+                <br>
+            </div>
+            <div class="btn-div">
+
+                <button onclick="Signup();" class="btn btn3">SIGN UP</button>
+                <button onclick="Login();" class="btn btn4">LOGIN IN</button>
+                <br><br>
+                <label class="forgotPassword" onclick="forgotPassword();">Forgot Password?</label>
+            </div>
+            </span>
+        </div>
+    </center>
+
+</body>
+
+</html>

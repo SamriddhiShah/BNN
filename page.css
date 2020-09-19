@@ -1,0 +1,190 @@
+.b1 {
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border-color: white;
+    font-size: 25px;
+    vertical-align: center;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.header {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    overflow: wrap;
+}
+
+body {
+    background-image: url('recently_added_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.input_div_message_page {
+    background-color: transparent;
+    border-radius: 25px;
+    border-width: 2px;
+    color: white;
+    vertical-align: bottom;
+    width: 600px;
+}
+
+.text-display {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #E37400;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Parisienne', cursive;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    float: left;
+    padding: 1px;
+}
+
+.btn3 {
+    border: 1px solid #F95700FF;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn3,
+.btn4 {
+    color: #fff;
+}
+
+.btn1:hover,
+.btn2:hover {
+    color: #fff;
+}
+
+.btn3:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.btn4:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #F95700FF;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before,
+.btn3::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    background: #F95700FF;
+}
+
+.btn2::before,
+.btn4::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background: #99cc00;
+}
+
+.btn3::before,
+.btn4::before {
+    height: 180%;
+}
+
+.btn1:hover::before,
+.btn2:hover::before {
+    height: 180%;
+}
+
+.btn3:hover::before,
+.btn4:hover::before {
+    height: 0%;
+}
+
+footer {
+    text-align: center;
+    background-color: #E37100;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

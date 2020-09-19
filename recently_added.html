@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Network</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="recently_added.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Book Network</h1>
+            <nav>
+                <ul>
+
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="recently_added.html">Book Collection</a></li>
+                    <li><a href="addBook.html">Add Books</a></li>
+                    <li><a onclick="logOut();" href="#">Log Out</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <center>
+            <h1 class="header">Book Collection</h1>
+            <div>
+                <div class="above-part">
+                    <input type="checkbox" id="check">
+                    <div class="box">
+                        <input type="text" id="keyword" placeholder="Type Here">
+                        <label for="check" class="dropdown"> <i class="fa fa-search fa-fw" style="color:white; padding:4px;"></i></label>
+                        <span class="middle">        
+                            <a  onclick="searchName();"style="display:inline-block;"class="btn btn2">Search By Title</a>
+                            <a onclick="searchAuthor();"style="display:inline-block;" class="btn btn1">Search By Author</a> 
+                            <a  onclick="search_genre();"style="display:inline-block;"class="btn btn3">Search By Genre</a>
+                            <a  onclick="my_book();"style="display:inline-block;"class="btn btn4">My Books</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="div2_output" id="output">
+            </div>
+        </center>
+    </div>
+    <script src="recently_added.js"></script>
+    <footer>
+        <p>Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>, Book Network <br> Based on Samriddhi's idea... Special Thanks to Aditya Singhania!
+        </p>
+    </footer>
+</body>
+
+
+</html>
