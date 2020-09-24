@@ -21,50 +21,56 @@ var userid = localStorage.getItem("User");
 console.log(userid);
 
 
-function validateForm() {
-    if(document.getElementById("i-book-name").value==" "){
-        errorMessage.push('Title of the Book must be filled out!');
-    }
-
-    if(document.getElementById("i-author").value==" "){
-        errorMessage.push('Author of the Book must be filled out!');
-    }
-    
-    if(document.getElementById("i-owner-fname").value==" "){
-        errorMessage.push('Your first name must be filled out!');
-    }
-
-    if(document.getElementById("i-owner-lname").value==" "){
-        errorMessage.push('Your last name must be filled out!');
-    }
-    
-    if(document.getElementById("i-class-sec").value==" "){
-        errorMessage.push('Your class-section must be filled out!');
-    }
-
-    if(document.getElementById("i-mobile-number").value==" "){
-        errorMessage.push('Your mobile number must be filled out!');
-    }
-var mb=document.getElementById("i-mobile-number").value;
-    if(mb.length<10){
-        errorMessage.push('Your mobile number should contain 10 digits! ');
-    }
-
-    if(mb.length>10){
-        errorMessage.push('Your mobile number exceeds the character limit of 10 digits! ');
-    }
-    for(i=0; i < errorMessage.length;){
-        document.getElementById("error_label").innerHTML=errorMessage[i];
-        console.log(errorMessage);
-    }
-
-    if (errorMessage.length=0){
-        addbook();
-    }
-  }
-
-
 function addbook() {
+    if (document.getElementById("i-book-name").value == "") {
+        console.log(errorNumber);
+        alert("Mentioning the name of the book is considered mandatory!");
+      return false;
+      }
+  
+      if (document.getElementById("i-author").value == "") {
+       console.log(errorNumber);
+          alert("Author of the book must be filled out!");
+          return false;
+        }
+  
+        if(document.getElementById("i-owner-fname").value==""){
+                  alert("Your first name is required.");
+                  return false;
+              }
+          
+              if(document.getElementById("i-owner-lname").value==""){
+                  alert("Please fill out your last name.");
+                  return false;
+              }
+              
+              if(document.getElementById("i-class-sec").value==""){
+                  alert("Your class-section must be filled out!");
+                  return false;
+              }
+          
+              if(document.getElementById("i-mobile-number").value==""){
+                  alert("Your mobile number must be mentioned! Make should contain 10 digits only.");
+                  return false;} 
+  
+              if(document.getElementById("i-mobile-number").value!=""){
+                  mobile=document.getElementById("i-mobile-number").value;
+              
+                 if(mobile.length>10){
+                 alert("Your mobile number should have 10 digits only!");
+                  return false;
+                 }
+  
+                 if(mobile.length<10){
+                  alert("Your mobile number contains less digits. It should have 10 digits only.");
+                  return false;
+                 }
+  
+              
+  
+              } 
+
+
     console.log("adding book");
     var canvas = document.getElementById("canvas");
     var dataurlV = canvas.toDataURL("image/png");
@@ -99,6 +105,8 @@ function addbook() {
     document.getElementById("dispaly_label").innerHTML = "Your Book has Successfully been added to the Library!";
 
 }
+
+
 
 
 function logOut() {
