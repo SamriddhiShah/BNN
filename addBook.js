@@ -15,7 +15,7 @@ var database = firebase.database();
 
 
 var errorMessage=[];
-
+errorNumber=0;
 var userid = localStorage.getItem("User");
 
 console.log(userid);
